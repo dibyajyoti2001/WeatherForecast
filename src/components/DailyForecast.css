@@ -1,0 +1,51 @@
+:root {
+  --section-overlay: #020202b3;
+}
+
+.forecastContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  background-color: var(--section-overlay);
+  color: white;
+  border-radius: 0.4rem;
+  margin: 10px;
+  padding: 15px;
+  width: 200px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.forecast-date {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.forecast-averageTemperature {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.forecast-description {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .forecastContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
